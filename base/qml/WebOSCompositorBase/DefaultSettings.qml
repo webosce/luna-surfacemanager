@@ -48,6 +48,7 @@ QtObject {
             }
         },
         "imageResources": {
+	    "shutdown": imagePath + "shutdown.png",
             "settings": imagePath + "settings.png",
             "spinner": imagePath + "spinner.gif",
             "pinBox": imagePath + "pinprompt_box_n.png",

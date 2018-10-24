@@ -117,6 +117,21 @@ FocusableView {
                         root.closeView();
                     }
                 }
+                Button {
+                    id: shutdownButton
+                    anchors.top: settingsButton.bottom
+                    anchors.right: parent.right
+                    anchors.topMargin: Settings.local.launcher.defaultMargin
+                    anchors.rightMargin: Settings.local.launcher.defaultMargin
+                    KeyNavigation.left: listArea.currentItem
+                    KeyNavigation.up: settingsButton
+                    iconSource: Settings.local.imageResources.shutdown
+                    implicitWidth: Settings.local.launcher.settingsIconSize
+                    implicitHeight: Settings.local.launcher.settingsIconSize
+                    onClicked: {
+                        LS.adhoc.call("luna://com.webos.service.power", "/shutdown/machineOff", "{\"reason\":\"power off\"}");
+                    }
+                }
             }
         }
     }
