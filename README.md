@@ -11,4 +11,4 @@ This package contains the wayland compositor implementation for webOS based on Q
 
 TODO
 ----
-Change "/luna-surfacemanager/base/qml/WebOSCompositorBase/resources/images/shutdown.png" to the appropriate vector image.
+If you want to change shutdown icon, change the icon file and modify 'Settings.local.launcher.shutdownIconSize' to appropriate size.
