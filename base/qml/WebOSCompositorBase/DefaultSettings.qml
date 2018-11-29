@@ -48,6 +48,7 @@ QtObject {
             }
         },
         "imageResources": {
+	        "shutdown": imagePath + "shutdown.png",
             "settings": imagePath + "settings.png",
             "spinner": imagePath + "spinner.gif",
             "pinBox": imagePath + "pinprompt_box_n.png",
@@ -64,6 +65,7 @@ QtObject {
             "backgroundColor": "#383838",
             "defaultMargin": 20,
             "settingsIconSize": 70,
+            "shutdownIconSize": 64,
             "slideAnimationDuration": 500
         },
         "localization": {
